@@ -9,5 +9,16 @@
 #import <UIKit/UIKit.h>
 
 @interface EBDViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *output;
+
+@property (strong, nonatomic) NSMutableData *responseData;
+
+- (IBAction)buttonTapped:(UIButton *)sender;
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data;
+    
+
+    
+;
 
 @end
